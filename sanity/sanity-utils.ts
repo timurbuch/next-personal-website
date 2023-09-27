@@ -1,14 +1,9 @@
 import { Project } from "@/types/Project";
 import { createClient} from "@sanity/client";
-
+import config from './client-config'
 
 export async function getProjects(): Promise<Project[]> {
-    const client = createClient({
-        projectId: 'l2yq8lmm',
-        dataset: 'production',
-        apiVersion: '2023-09-23',
-        useCdn: false
-    })
+    const client = createClient(config)
 
     return client.fetch(`*[_type == "project"]{
         _id,
@@ -23,12 +18,7 @@ export async function getProjects(): Promise<Project[]> {
 }
 
 export async function getProject(slug: string): Promise<Project> {
-    const client = createClient({
-        projectId: 'l2yq8lmm',
-        dataset: 'production',
-        apiVersion: '2023-09-23',
-        useCdn: false
-    })
+    const client = createClient(config)
 
     return client.fetch(`*[_type == "project && slug.current == ${slug}[0]"]{
         _id,
