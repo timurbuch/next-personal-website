@@ -13,8 +13,7 @@ export default async function Home() {
         </span>
       </h1>
       <p className="mt-3 text-xl text-slate-200">
-        Hello guys and gals this is a fun little app to show off my recent
-        projects!
+      Crafting captivating web experiences through code and creativity
       </p>
       <h2 className="mt-24 font-bold text-slate-100 text-3xl">My Projects</h2>
       <div className="mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
