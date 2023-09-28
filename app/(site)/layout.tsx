@@ -24,7 +24,7 @@ export default async function RootLayout({
         <header className="flex items-center justify-between">
           <Link
             href="/"
-            className="bg-gradient-to-r from-amber-400 via-purple-500 to bg-red-400 bg-clip-text text-transparent text-lg font-bold"
+            className="orange_gradient text-lg font-bold"
           >
             Timur
           </Link>

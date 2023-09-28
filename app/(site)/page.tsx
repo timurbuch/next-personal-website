@@ -29,7 +29,7 @@ export default async function Home() {
                 className="object-cover rounded-lg border border-slate-500"
               />
             )}
-            <div className="font-extrabold bg-gradient-to-r from-amber-400 via-purple-500 to bg-red-400 bg-clip-text text-transparent">
+            <div className="font-extrabold orange_gradient">
               {project.name}
             </div>
           </Link>
